@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your website description here.">
+  <meta name="keywords" content="keyword1, keyword2, keyword3, ...">
+  <meta name="author" content="Your Name">
+  <meta name="copyright" content="Your Copyright Information">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta property="og:title" content="Your Website Title">
+  <meta property="og:description" content="Your website description here.">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:site_name" content="Your Website Name">
+  <meta name="twitter:title" content="Your Website Title">
+  <meta name="twitter:description" content="Your website description here.">
+  <meta name="twitter:image" content="https://example.com/image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Portfolio</title>
+  <!-- Unicons CSS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!-- Your CSS File -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="#" class="logo">AVK</a>
+
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#project-section">Projects</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+      <i class="uil uil-search search-icon"></i>
+      <input type="text" placeholder="Search here..." />
+    </div>
+  </nav>
+    
+  <!-- Main Section (Hero Section) -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h2 class="hero-title">Adithya Venkat Kumar</h2>
+      <p class="hero-subtitle">Front-End Developer</p>
+      <a href="#contact-section" class="hero-button">Connect</a>
+    </div>
+  </section>
+  
+  <!--About-Section-->
+  <section class="about-section" id="about-section">
+    <div class="about-left">
+      <h2>About Me</h2>
+      <p>Hello! I'm Adithya.BW, a passionate web developer with a keen interest in front-end technologies. Currently pursuing an M.Tech Integrated in C.S.E. at VITAP, I am dedicated to building a startup and becoming a proficient Frontend Developer.</p>
+      <p>My journey in tech started with a curiosity for how websites are built and evolved into a full-fledged passion. I thrive in dynamic learning environments and am always eager to embrace cutting-edge technologies.</p>
+  
+      <!-- Section 5: Education and Skills -->
+      <div class="column-education">
+          <h2>Education</h2>
+          <table class="table-style">
+              <tr>
+                  <td>VIT-AP University, Amaravathi</td>
+                  <td>2021-2026 (Expected)</td>
+              </tr>
+              <tr>
+                  <td>Inter(+1, +2) Narayana Junior College</td>
+                  <td>2020-2021</td>
+              </tr>
+              <tr>
+                  <td>SSC (Class 10) Oxford IIT School, Guntur</td>
+                  <td>2018-2019</td>
+              </tr>
+          </table>
+      </div>
+  </div>
+  
+  <div class="about-right">
+    <!-- Certification Section -->
+    <div class="certificate-section">
+      <h3>Certifications</h3>
+      <div class="certificate-details">
+        <p>Pennify Chapter VIT-AP University</p>
+        <a href="https://certificate.givemycertificate.com/c/81a3c18f-8420-4d38-a76f-2b7dfded41c7" class="certification-btn">Certificate</a>
+      </div>
+      <div class="certificate-details">
+        <p>Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</p>
+        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=9202050C2040B5764F3550066B1D6B1593D9487BBCE9D73EA89C82963E133CD2" class="certification-btn">Certificate</a>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+      <h3>Skills</h3>
+      <div class="skills-buttons">
+        <button class="skill-btn">HTML</button>
+        <button class="skill-btn">CSS</button>
+        <button class="skill-btn">JavaScript</button>
+        <button class="skill-btn">Tailwind</button>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <!-- Project Section -->
+<section class="project-section" id="project-section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-cards">
+
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <h3 class="project-title"> Arduino-Based Ultrasonic Radar System</h3>
+        <p class="project-description">This project involves creating a basic radar system using an Arduino UNO and an ultrasonic sensor. The system can detect objects within a certain range, measure their distance, and visually display their position in real-time on a screen. It serves as an educational tool to demonstrate the principles of radar technology using cost-effective components and open-source software.</p>
+        <a href="Pdf/Radar_System_Using_Arduino_UNO_and_Ultrasonic_Sensor_Final_Report.pdf" class="project-button">View Project</a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <h3 class="project-title">Bluetooth-Controlled Car Using Raspberry Pi Pico</h3>
+        <p class="project-description">This project focuses on developing a Bluetooth-controlled car using the Raspberry Pi Pico microcontroller. The car is controlled wirelessly through an Android application, enabling movements such as forward, backward, left, and right. The system integrates a Bluetooth module to communicate commands from the smartphone to the car, making it a practical demonstration of remote-controlled robotics. This project serves as an educational tool for understanding basic robotic control systems and Bluetooth communication.</p>
+        <a href="Pdf/Bluetooth_Control_Car_Using_Raspberry_Pi_Pico_Final_Report.pdf" class="project-button">View Project</a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <h3 class="project-title">Cloning the VIT-AP Website</h3>
+        <p class="project-description">This project involves creating a clone of the VIT-AP University website, focusing on replicating its layout, design, and core functionalities. The objective is to understand and recreate the website’s structure using HTML, CSS, and JavaScript. The cloned site will maintain the visual appearance and user interface of the original, offering an educational experience in web development and design. This project is a valuable exercise for learning responsive design, web technologies, and deployment processes.</p>
+        <a href="https://adithyavitap.netlify.app/about" class="project-button">View Website</a>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <h3 class="project-title">Email Spam Detection with NLP and Mecchine Learning</h3>
+        <p class="project-description">This project focuses on developing a spam detection system that classifies emails into spam and ham (non-spam) using Natural Language Processing (NLP) and Machine Learning (ML) techniques. By applying advanced text preprocessing and feature extraction methods, the system aims to enhance the accuracy of spam detection. Various ML algorithms are evaluated to determine the most effective approach for identifying spam, offering a robust solution to combat unsolicited and potentially harmful email content.</p>
+        <a href="Pdf/Final_Report_Email_Spam _Detection.pdf" class="project-button">View Project</a>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="project-card">
+        <h3 class="project-title">Email Spam Detection with NLP and ML(Research Paper)</h3>
+        <p class="project-description">This research paper introduces an email spam detection system employing Natural Language Processing (NLP) and Machine Learning (ML) techniques. It details a methodology combining text preprocessing, Term Frequency-Inverse Document Frequency (TF-IDF) for feature extraction, and Support Vector Machine (SVM) for classification. The paper evaluates various algorithms and compares their performance, demonstrating the effectiveness of the proposed approach. The findings highlight advancements in spam detection and outline future improvements for handling evolving spam tactics.</p>
+        <a href="Pdf/Research_Report_Email_Spam_Detection.pdf" class="project-button">View Project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact-section">
+  <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions or just want to get in touch, feel free to email me at:</p>
+      <p><a href="mailto:adithyavenkata.ravuri@gmail.com">adithyavenkata.ravuri@gmail.com</a></p>
+      <div class="contact-social-icons">
+          <a href="https://github.com/adi-2023" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/adithya-venkat-kumar-bw-520062231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+      <p class="copyright">© 2024 Adithya.BW. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+  <!--Script.js-->
+  <script src="script.js"></script>
+</body>
+</html>
