@@ -18,39 +18,45 @@
     <div class="scanline-overlay"></div>
 
 
-    <header class="cyber-nav bg-cyber-dark/80 py-4 sticky top-0 z-50 transition-all duration-500 border-b border-cyber-primary/20 cyber-nav-scrolled">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <div class="text-2xl font-bold text-cyber-primary hover:text-cyber-accent transition-colors duration-300 font-cyber glow-text">
-                <span>AVK.BW</span>
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <nav class="nav-links hidden md:flex space-x-8">
-                <a href="#home" class="cyber-nav-link text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium">Home</a>
-                <a href="#about" class="cyber-nav-link text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium">About</a>
-                <a href="#projects" class="cyber-nav-link text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium">Projects</a>
-                <a href="#contact" class="cyber-nav-link text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium">Contact</a>
-            </nav>
-            
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="mobile-menu-button md:hidden text-cyber-muted hover:text-cyber-primary transition-colors duration-300" aria-label="Toggle menu">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="mobile-menu md:hidden">
-            <div class="flex flex-col space-y-3">
-                <a href="#home" class="text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium py-2 border-b border-cyber-primary/10">Home</a>
-                <a href="#about" class="text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium py-2 border-b border-cyber-primary/10">About</a>
-                <a href="#projects" class="text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium py-2 border-b border-cyber-primary/10">Projects</a>
-                <a href="#contact" class="text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-base font-medium py-2">Contact</a>
-            </div>
-        </div>
-    </header>
+    <header class="cyber-nav bg-cyber-dark text-cyber-text">
+  <div class="flex justify-between items-center w-full">
+    <!-- Logo -->
+    <a href="#" class="text-xl font-bold text-cyber-primary">AVK.BW</a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex nav-links gap-6">
+      <a href="#home" class="cyber-nav-link">Home</a>
+      <a href="#about" class="cyber-nav-link">About</a>
+      <a href="#education" class="cyber-nav-link">Education</a>
+      <a href="#certifications" class="cyber-nav-link">Certifications</a>
+      <a href="#skills" class="cyber-nav-link">Skills</a>
+      <a href="#projects" class="cyber-nav-link">Projects</a>
+      <a href="#contact" class="cyber-nav-link">Contact</a>
+    </nav>
+
+    <!-- Mobile button -->
+    <button id="mobile-menu-button" 
+            class="mobile-menu-button md:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile nav -->
+  <nav id="mobile-menu" class="mobile-menu md:hidden">
+    <a href="#home" class="block py-2 cyber-nav-link">Home</a>
+    <a href="#about" class="block py-2 cyber-nav-link">About</a>
+    <a href="#education" class="block py-2 cyber-nav-link">Education</a>
+    <a href="#certifications" class="block py-2 cyber-nav-link">Certifications</a>
+    <a href="#skills" class="block py-2 cyber-nav-link">Skills</a>
+    <a href="#projects" class="block py-2 cyber-nav-link">Projects</a>
+    <a href="#contact" class="block py-2 cyber-nav-link">Contact</a>
+  </nav>
+</header>
 
     <!-- Hero Section -->
-    <section id="home" class="py-20 bg-gradient-to-br from-cyber-dark to-cyber-darker overflow-hidden relative section-padding">
+    <section id="home" class="py-32 bg-gradient-to-br from-cyber-dark to-cyber-darker overflow-hidden relative section-padding">
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-10"></div>
             <div class="absolute top-1/2 left-1/2 w-96 h-96 rounded-full bg-cyber-primary/5 filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -65,7 +71,7 @@
                     </div>
                 </div>
                 
-                <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl font-bold mb-4 font-cyber glow-text">
+                <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 sm:mb-6 font-cyber text-cyber-primary">
                     <span class="terminal-text">$</span> Adithya Venkat Kumar.BW
                 </h1>
                 
@@ -142,73 +148,85 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="py-16 bg-cyber-darker relative section-padding">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-3xl font-bold mb-8 sm:mb-12 font-cyber text-cyber-primary">
-                <span class="terminal-text">></span> Education
-            </h2>
-            
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
-                    <div class="flex items-start">
-                        <div class="mr-6 text-cyber-primary text-3xl">
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-semibold text-cyber-primary mb-1 font-cyber">VIT-AP University, Amaravathi</h3>
-                            <div class="flex items-center text-cyber-muted mb-3">
-                                <i class="far fa-calendar-alt mr-2 text-sm"></i>
-                                <span class="text-sm">2021-2026 (Expected)</span>
-                            </div>
-                            <p class="text-cyber-muted text-sm leading-relaxed">
-                                <span class="terminal-text">$</span> M.Tech Integrated in Computer Science and Engineering
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<!-- Education Section -->
+<section id="education" class="py-16 bg-cyber-darker relative section-padding">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-3xl font-bold mb-8 sm:mb-12 font-cyber text-cyber-primary">
+      <span class="terminal-text">></span> Education
+    </h2>
 
-                <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
-                    <div class="flex items-start">
-                        <div class="mr-6 text-cyber-primary text-3xl">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-semibold text-cyber-primary mb-1 font-cyber">Narayana Junior College</h3>
-                            <div class="flex items-center text-cyber-muted mb-3">
-                                <i class="far fa-calendar-alt mr-2 text-sm"></i>
-                                <span class="text-sm">2019-2021</span>
-                            </div>
-                            <p class="text-cyber-muted text-sm leading-relaxed">
-                                <span class="terminal-text">$</span> Intermediate (+1, +2)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
-                    <div class="flex items-start">
-                        <div class="mr-6 text-cyber-primary text-3xl">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-semibold text-cyber-primary mb-1 font-cyber">Oxford IIT School, Guntur</h3>
-                            <div class="flex items-center text-cyber-muted mb-3">
-                                <i class="far fa-calendar-alt mr-2 text-sm"></i>
-                                <span class="text-sm">2018-2019</span>
-                            </div>
-                            <p class="text-cyber-muted text-sm leading-relaxed">
-                                <span class="terminal-text">$</span> SSC (Class 10)
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <!-- University -->
+      <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
+        <div class="flex items-start">
+          <div class="mr-6 text-cyber-primary text-3xl">
+            <i class="fas fa-university"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-cyber-primary mb-1 font-cyber">
+              VIT-AP University, Amaravati
+            </h3>
+            <div class="flex items-center text-cyber-muted mb-3">
+              <i class="far fa-calendar-alt mr-2 text-sm"></i>
+              <span class="text-sm">2021 - 2026 (Expected)</span>
             </div>
+            <p class="text-cyber-muted text-sm leading-relaxed">
+              <span class="terminal-text">$</span> Integrated M.Tech in Computer Science & Engineering
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- Junior College -->
+      <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
+        <div class="flex items-start">
+          <div class="mr-6 text-cyber-primary text-3xl">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-cyber-primary mb-1 font-cyber">
+              Narayana Junior College
+            </h3>
+            <div class="flex items-center text-cyber-muted mb-3">
+              <i class="far fa-calendar-alt mr-2 text-sm"></i>
+              <span class="text-sm">2019 - 2021</span>
+            </div>
+            <p class="text-cyber-muted text-sm leading-relaxed">
+              <span class="terminal-text">$</span> Intermediate (MPC Stream)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- School -->
+      <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
+        <div class="flex items-start">
+          <div class="mr-6 text-cyber-primary text-3xl">
+            <i class="fas fa-school"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-cyber-primary mb-1 font-cyber">
+              Oxford IIT School, Guntur
+            </h3>
+            <div class="flex items-center text-cyber-muted mb-3">
+              <i class="far fa-calendar-alt mr-2 text-sm"></i>
+              <span class="text-sm">2018 - 2019</span>
+            </div>
+            <p class="text-cyber-muted text-sm leading-relaxed">
+              <span class="terminal-text">$</span> SSC (Class X)
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Certifications Section -->
-    <section class="py-16 bg-cyber-dark relative section-padding">
+    <section id="certifications" class="py-16 bg-cyber-dark relative section-padding">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title text-3xl font-bold mb-8 sm:mb-12 font-cyber text-cyber-primary">
                 <span class="terminal-text">></span> Certifications
@@ -250,7 +268,7 @@
 </section>
 
 <!-- Skills Section -->
-<section class="py-16 bg-cyber-darker relative section-padding">
+<section id="skills" class="py-16 bg-cyber-darker relative section-padding">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="section-title text-3xl font-bold mb-8 sm:mb-12 font-cyber text-cyber-primary">
       <span class="terminal-text">></span> Skills
@@ -258,6 +276,8 @@
 
     <div class="max-w-4xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- Technical Skills -->
         <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
           <h3 class="text-xl font-semibold mb-4 text-cyber-primary font-cyber">Technical Skills</h3>
           <div class="flex flex-wrap gap-2">
@@ -268,9 +288,6 @@
               <i class="fab fa-css3-alt mr-2 text-cyber-primary"></i> CSS3
             </div>
             <div class="cyber-tag px-4 py-2 rounded-full flex items-center text-sm">
-              <i class="fab fa-js mr-2 text-cyber-primary"></i> JavaScript
-            </div>
-            <div class="cyber-tag px-4 py-2 rounded-full flex items-center text-sm">
               <i class="fab fa-python mr-2 text-cyber-primary"></i> Python
             </div>
             <div class="cyber-tag px-4 py-2 rounded-full flex items-center text-sm">
@@ -279,6 +296,7 @@
           </div>
         </div>
 
+        <!-- Tools & Platforms -->
         <div class="cyber-card p-6 rounded-xl border border-cyber-primary/20">
           <h3 class="text-xl font-semibold mb-4 text-cyber-primary font-cyber">Tools & Platforms</h3>
           <div class="flex flex-wrap gap-2">
@@ -292,10 +310,10 @@
               <i class="fas fa-terminal mr-2 text-cyber-primary"></i> VS Code
             </div>
             <div class="cyber-tag px-4 py-2 rounded-full flex items-center text-sm">
-              <i class="fas fa-microchip mr-2 text-cyber-primary"></i> Arduino
+              <i class="fas fa-book mr-2 text-cyber-primary"></i> Jupyter
             </div>
             <div class="cyber-tag px-4 py-2 rounded-full flex items-center text-sm">
-              <i class="fas fa-raspberry-pi mr-2 text-cyber-primary"></i> Raspberry Pi
+              <i class="fas fa-cloud mr-2 text-cyber-primary"></i> Google Colab
             </div>
           </div>
         </div>
@@ -303,6 +321,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects" class="py-16 bg-cyber-dark relative section-padding">
@@ -323,40 +342,49 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
         <!-- Project 1 -->
-        <div class="project-card cyber-card rounded-xl border border-cyber-primary/20" data-category="web">
-          <div class="h-48 bg-gradient-to-r from-cyber-primary/20 to-cyber-secondary/20 flex items-center justify-center">
-            <i class="fas fa-laptop-code text-5xl text-cyber-primary"></i>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="text-xl font-bold text-cyber-primary">E-Commerce Platform</h3>
-              <span class="bg-cyber-primary/10 text-cyber-primary text-xs px-2 py-1 rounded">Web</span>
-            </div>
-            <p class="text-cyber-muted mb-4">A full-featured online store with product listings, cart functionality, and secure checkout process.</p>
-            
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-cyber-primary/20">
-                <i class="fab fa-react text-cyber-primary mr-1"></i> React
-              </span>
-              <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-cyber-primary/20">
-                <i class="fab fa-node-js text-cyber-primary mr-1"></i> Node.js
-              </span>
-              <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-cyber-primary/20">
-                <i class="fas fa-database text-cyber-primary mr-1"></i> MongoDB
-              </span>
-            </div>
-            
-            <div class="flex gap-3">
-              <a href="#" class="flex-1 cyber-button bg-cyber-primary/10 hover:bg-cyber-primary/20 text-cyber-primary py-2 px-4 rounded-lg text-center transition flex items-center justify-center border border-cyber-primary/30">
-                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
-              </a>
-              <a href="#" class="w-12 cyber-button bg-cyber-dark hover:bg-cyber-primary/10 text-cyber-primary py-2 px-4 rounded-lg text-center transition flex items-center justify-center border border-cyber-primary/30">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+<div class="project-card cyber-card rounded-xl border border-green-400/30" data-category="ml">
+  <div class="h-48 bg-gradient-to-r from-green-400/20 to-emerald-500/20 flex items-center justify-center">
+    <i class="fas fa-envelope-open-text text-5xl text-green-400"></i>
+  </div>
+  <div class="p-6">
+    <div class="flex justify-between items-start mb-2">
+      <h3 class="text-xl font-bold text-green-400">Mail Spam Detection System</h3>
+      <span class="bg-green-400/10 text-green-400 text-xs px-2 py-1 rounded">Machine Learning</span>
+    </div>
+    <p class="text-cyber-muted mb-4">
+      A machine learning solution that classifies emails as <strong>Spam</strong> or <strong>Ham</strong> using a Naive Bayes classifier, with a Flask-powered web interface.
+    </p>
+
+    <!-- Tech Stack -->
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-green-400/30">
+        <i class="fab fa-python text-green-400 mr-1"></i> Python
+      </span>
+      <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-green-400/30">
+        <i class="fas fa-brain text-green-400 mr-1"></i> Scikit-learn
+      </span>
+      <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-green-400/30">
+        <i class="fas fa-language text-green-400 mr-1"></i> NLTK
+      </span>
+      <span class="tech-tag bg-cyber-dark px-3 py-1 rounded-full text-sm flex items-center border border-green-400/30">
+        <i class="fas fa-fire text-green-400 mr-1"></i> Flask
+      </span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-3">
+      <a href="#" class="flex-1 cyber-button bg-green-400/10 hover:bg-green-400/20 text-green-400 py-2 px-4 rounded-lg text-center transition flex items-center justify-center border border-green-400/30">
+        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+      </a>
+      <a href="https://github.com/adi-2023/spam-detection?tab=readme-ov-file" class="w-12 cyber-button bg-cyber-dark hover:bg-green-400/10 text-green-400 py-2 px-4 rounded-lg text-center transition flex items-center justify-center border border-green-400/30">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
 
         <!-- Project 2 -->
         <div class="project-card cyber-card rounded-xl border border-cyber-primary/20" data-category="mobile">
@@ -598,17 +626,6 @@
     <!-- Footer -->
 <footer class="py-8 bg-cyber-dark border-t border-cyber-primary/20">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <div class="flex justify-center space-x-6 mb-6">
-      <a href="#" class="w-12 h-12 rounded-full bg-cyber-dark flex items-center justify-center text-cyber-primary hover:text-cyber-accent transition-colors duration-300 text-xl">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="#" class="w-12 h-12 rounded-full bg-cyber-dark flex items-center justify-center text-cyber-primary hover:text-cyber-accent transition-colors duration-300 text-xl">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="#" class="w-12 h-12 rounded-full bg-cyber-dark flex items-center justify-center text-cyber-primary hover:text-cyber-accent transition-colors duration-300 text-xl">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </div>
     <p class="mb-4 text-cyber-muted text-sm">&copy; 2024 Adithya.BW. All rights reserved.</p>
     <div class="mt-6">
       <a href="#home" class="text-cyber-muted hover:text-cyber-primary transition-colors duration-300 text-sm">
